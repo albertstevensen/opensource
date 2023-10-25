@@ -1,0 +1,31 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+01 - Login,Chrome 118.0.0.0,,,2023-10-24 01:24:37,2023-10-24 01:25:05,27.989s,PASSED
+,,,,,,,
+Test Cases/00 - Open Orange HRM,Chrome 118.0.0.0,,,2023-10-24 01:24:37,2023-10-24 01:24:46,9.017s,PASSED
+openBrowser(url),Chrome 118.0.0.0,,,2023-10-24 01:24:38,2023-10-24 01:24:44,6.117s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:24:44,2023-10-24 01:24:46,2.037s,PASSED
+takeScreenshot(),Chrome 118.0.0.0,,,2023-10-24 01:24:46,2023-10-24 01:24:46,0.423s,PASSED
+maximizeWindow(),Chrome 118.0.0.0,,,2023-10-24 01:24:46,2023-10-24 01:24:46,0.150s,PASSED
+,,,,,,,
+Test Cases/01 - Login/01 - Inquiry Username,Chrome 118.0.0.0,,,2023-10-24 01:24:46,2023-10-24 01:24:53,6.204s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:24:47,2023-10-24 01:24:49,2.015s,PASSED
+"username = findTestData(""Data Files/01 - Login Page"")",Chrome 118.0.0.0,,,2023-10-24 01:24:49,2023-10-24 01:24:49,0.650s,PASSED
+"usernameobj = findTestObject(""Object Repository/01 - Login Page/01 - username"")",Chrome 118.0.0.0,,,2023-10-24 01:24:49,2023-10-24 01:24:49,0.047s,PASSED
+"setText(usernameobj, username.getValue(""username"", 1))",Chrome 118.0.0.0,,,2023-10-24 01:24:49,2023-10-24 01:24:50,0.743s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:24:50,2023-10-24 01:24:52,2.014s,PASSED
+takeScreenshot(),Chrome 118.0.0.0,,,2023-10-24 01:24:52,2023-10-24 01:24:53,0.401s,PASSED
+,,,,,,,
+Test Cases/01 - Login/02 - Inquiry Password,Chrome 118.0.0.0,,,2023-10-24 01:24:53,2023-10-24 01:24:58,5.472s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:24:53,2023-10-24 01:24:55,2.008s,PASSED
+"username = findTestData(""Data Files/01 - Login Page"")",Chrome 118.0.0.0,,,2023-10-24 01:24:55,2023-10-24 01:24:55,0.033s,PASSED
+"usernameobj = findTestObject(""Object Repository/01 - Login Page/02 - password"")",Chrome 118.0.0.0,,,2023-10-24 01:24:55,2023-10-24 01:24:55,0.047s,PASSED
+"setText(usernameobj, username.getValue(""password"", 1))",Chrome 118.0.0.0,,,2023-10-24 01:24:55,2023-10-24 01:24:56,0.650s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:24:56,2023-10-24 01:24:58,2.012s,PASSED
+takeScreenshot(),Chrome 118.0.0.0,,,2023-10-24 01:24:58,2023-10-24 01:24:58,0.435s,PASSED
+,,,,,,,
+Test Cases/01 - Login/03 - Klik Tombol Login,Chrome 118.0.0.0,,,2023-10-24 01:24:58,2023-10-24 01:25:05,7.025s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:24:58,2023-10-24 01:25:01,2.017s,PASSED
+"loginbtn = findTestObject(""Object Repository/01 - Login Page/03 - login btn"")",Chrome 118.0.0.0,,,2023-10-24 01:25:01,2023-10-24 01:25:01,0.051s,PASSED
+click(loginbtn),Chrome 118.0.0.0,,,2023-10-24 01:25:01,2023-10-24 01:25:01,0.357s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:25:01,2023-10-24 01:25:03,2.010s,PASSED
+takeScreenshot(),Chrome 118.0.0.0,,,2023-10-24 01:25:03,2023-10-24 01:25:05,2.228s,PASSED

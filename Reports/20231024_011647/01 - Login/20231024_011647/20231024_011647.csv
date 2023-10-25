@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+01 - Login,Chrome 118.0.0.0,,,2023-10-24 01:16:50,2023-10-24 01:17:04,14.351s,PASSED
+,,,,,,,
+Test Cases/00 - Open Orange HRM,Chrome 118.0.0.0,,,2023-10-24 01:16:50,2023-10-24 01:17:00,10.455s,PASSED
+openBrowser(url),Chrome 118.0.0.0,,,2023-10-24 01:16:50,2023-10-24 01:16:58,7.551s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:16:58,2023-10-24 01:17:00,2.028s,PASSED
+takeScreenshot(),Chrome 118.0.0.0,,,2023-10-24 01:17:00,2023-10-24 01:17:00,0.440s,PASSED
+maximizeWindow(),Chrome 118.0.0.0,,,2023-10-24 01:17:00,2023-10-24 01:17:00,0.149s,PASSED
+,,,,,,,
+Test Cases/01 - Login/01 - Inquiry Username,Chrome 118.0.0.0,,,2023-10-24 01:17:00,2023-10-24 01:17:04,3.623s,PASSED
+delay(2),Chrome 118.0.0.0,,,2023-10-24 01:17:01,2023-10-24 01:17:03,2.013s,PASSED
+"username = findTestData(""Data Files/01 - Login Page"")",Chrome 118.0.0.0,,,2023-10-24 01:17:03,2023-10-24 01:17:03,0.542s,PASSED
+"usernameobj = findTestObject(""Object Repository/01 - Login Page/01 - username"")",Chrome 118.0.0.0,,,2023-10-24 01:17:03,2023-10-24 01:17:03,0.063s,PASSED
+"setText(usernameobj, username.getValue(""username"", 1))",Chrome 118.0.0.0,,,2023-10-24 01:17:03,2023-10-24 01:17:04,0.727s,PASSED
